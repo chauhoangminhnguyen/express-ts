@@ -1,0 +1,3 @@
+- install dependency: `yarn`
+- start local: `yarn start-dev`
+- start production: `yarn start`

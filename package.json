@@ -1,0 +1,28 @@
+{
+  "name": "express-ts-nodemon",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/main.ts",
+  "author": "chauhmnguyen",
+  "scripts": {
+    "start": "node dist/main",
+    "start-dev": "nodemon src/main.ts",
+    "start-ts": "ts-node dist/main",
+    "start-n": "./node_modules/.bin/tsc -out dist/main.js src/main && node dist/main",
+    "build": "tsc",
+    "deploy": "gcloud app deploy",
+    "browse": "gcloud app browse",
+    "delete": "gcloud app service delete",
+    "logs": "gcloud app logs tail"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
