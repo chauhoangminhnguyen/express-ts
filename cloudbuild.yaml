@@ -24,12 +24,12 @@
 # images:
 #   - 'asia.gcr.io/tough-racer-272817/blog:latest'
 
-# update 15
+# update 16
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['-v']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
     - version
-# options:
-#   logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
