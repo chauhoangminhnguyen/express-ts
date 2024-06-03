@@ -24,7 +24,7 @@
 # images:
 #   - 'asia.gcr.io/tough-racer-272817/blog:latest'
 
-# update 14
+# update 15
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['-v']
